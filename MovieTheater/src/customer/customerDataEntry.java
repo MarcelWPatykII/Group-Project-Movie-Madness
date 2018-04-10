@@ -31,7 +31,7 @@ public class customerDataEntry extends JPanel {
 		add(lblNewLabel);
 
 		customerFirstName = new JTextField();
-		customerFirstName.setBounds(140, 5, 86, 20);
+		customerFirstName.setBounds(140, 5, 130, 20);
 		customerFirstName.setColumns(10);
 		add(customerFirstName);
 		
@@ -42,7 +42,7 @@ public class customerDataEntry extends JPanel {
 
 		customerLastName = new JTextField();
 		customerLastName.setColumns(10);
-		customerLastName.setBounds(140, 33, 86, 20);
+		customerLastName.setBounds(140, 33, 130, 20);
 		add(customerLastName);
 
 		JLabel lblCustomerAge = new JLabel("Customer age");
@@ -51,7 +51,7 @@ public class customerDataEntry extends JPanel {
 
 		customerAge = new JTextField();
 		customerAge.setColumns(10);
-		customerAge.setBounds(140, 61, 86, 20);
+		customerAge.setBounds(140, 61, 130, 20);
 		add(customerAge);
 
 		JLabel lblCustomerMovie = new JLabel("Movie name");
@@ -63,7 +63,7 @@ public class customerDataEntry extends JPanel {
 		add(lblMovieTime);
 
 		Choice movieTime = new Choice();
-		movieTime.setBounds(140, 117, 86, 20);
+		movieTime.setBounds(140, 117, 130, 20);
 
 		// REMOVE BELOW WHEN DB IS READY
 
@@ -80,7 +80,7 @@ public class customerDataEntry extends JPanel {
 
 		JLabel moviePrice = new JLabel();
 		moviePrice.setToolTipText("Price of the movie");
-		moviePrice.setBounds(140, 145, 86, 20);
+		moviePrice.setBounds(140, 145, 130, 20);
 		//Border creates a visual unclickable field
 		Border border = BorderFactory.createLineBorder(Color.black, 1);
 		moviePrice.setBorder(border);
@@ -91,7 +91,7 @@ public class customerDataEntry extends JPanel {
 		add(lblPaymentMethod);
 
 		Choice paymentMethod = new Choice();
-		paymentMethod.setBounds(140, 173, 86, 20);
+		paymentMethod.setBounds(140, 173, 130, 20);
 		paymentMethod.add("Visa");
 		paymentMethod.add("MasterCard");
 		paymentMethod.add("Cash");
@@ -104,7 +104,7 @@ public class customerDataEntry extends JPanel {
 
 		JLabel paymentTotal = new JLabel();
 		paymentTotal.setToolTipText("Price of the movie");
-		paymentTotal.setBounds(140, 201, 86, 20);
+		paymentTotal.setBounds(140, 201, 130, 20);
 		paymentTotal.setBorder(border);
 		add(paymentTotal);
 
@@ -123,7 +123,7 @@ public class customerDataEntry extends JPanel {
 				// REMOVE ABOVE WHEN DB IS READY
 			}
 		});
-		movieName.setBounds(140, 89, 86, 20);
+		movieName.setBounds(140, 89, 130, 20);
 
 		// REMOVE BELOW WHEN DB IS READY
 
@@ -136,7 +136,7 @@ public class customerDataEntry extends JPanel {
 
 		// Accept button
 		JButton btnAccept = new JButton("Accept");
-		btnAccept.setBounds(140, 232, 86, 23);
+		btnAccept.setBounds(164, 232, 86, 23);
 		btnAccept.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				getInput(movieName.getSelectedItem(), movieTime.getSelectedItem(), paymentMethod.getSelectedItem());
